@@ -89,7 +89,7 @@ except:
     print(except_message + " when importing the books") 
 
 finally:
-    print("\tCSV data successfully loaded.")
+    print("\n\tCSV data successfully loaded.")
     file.close() 
 
 #print(booksDict)
@@ -150,24 +150,24 @@ finally:
 # Write the book, loan and member dictionaries to json files.
 
 try:
-    print("\nSaving data into JSON format...\n\n") 
+    print("\nSaving data into JSON format...\n") 
 
     with open("books.json", "w") as write_file:
         json.dump(booksDict, write_file)
         json_str=json.dumps(booksDict)
-        print("\tbooksDict data has been saved to books.json.")
+        print("\tbooksDict saved to books.JSON.")
         
     with open("loans.json", "w") as write_file:
         json.dump(loanDict, write_file)
         json_str=json.dumps(loanDict)
-        print("\tloanDict data has been saved to loans.json")
+        print("\tloanDict saved to loans.JSON")
         
     with open("members.json", "w") as write_file:
         json.dump(memberDict, write_file)
         json_str=json.dumps(memberDict)
-        print("\tjson\n")
+        print("\tmembers saved to members.JSON\n")
 
-    print("\n\Saving complete...\n\n")
+    print("\tSaving complete...\n")
     
 except:
     print(except_message + "when writing the dictionaries to the json file.")
@@ -187,12 +187,12 @@ def loadJSON(file):
 try:
     print("Now loading JSON data...")
     books = loadJSON("books.json")
-    print("\tbooks.json has been loaded")
+    print("\tbooks.json loaded")
     loans = loadJSON("loans.json")
-    print("\tloans.json has been loaded")
+    print("\tloans.json loaded")
     members = loadJSON("members.json")
-    print("\tmembers.json has been loaded")
-    print("JSON data loaded successfully")
+    print("\tmembers.json loaded")
+    print("\tJSON data loaded successfully")
     
 except:
     print("\tERROR: There was an error while loading the json files")
@@ -423,7 +423,7 @@ class Loan(Book, Member):
                         The interface is expandable by creating new options in the menus.
 """
 
-print("\n******* Welcome to the Library Console! *******\n")
+print("\n\n******* WELCOME TO THE LIBRARY CONSOLE! *******\n")
 print("\t Please select an option between 1-3 for the following options:")
 print("\t \t 1: Existing member login")
 print("\t \t 2: Apply for membership")
@@ -470,10 +470,12 @@ if option == 1:
         name = input("Please enter your full name:")
         title = input("Please enter the full title of the book you'd like to return:")
         Loan.Reserve(name, title)
+
         
 #If a non member wants to apply for a library membership        
 if option == 2:
     Member.apply()
+
     print("Your membership application is complete. \nPlease note it may take up to 3 days for your application to be processed")
     
 #If a member of staff wants to access the 

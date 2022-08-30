@@ -2,4 +2,6 @@ NEW MEMBER APPLICATION ON:2021-10-14
 
 {'Firstname': 'Gary', 'Last Name': 'Coxhead', 'Gender': 'female', 'Email': 'gmail', 'CardNumber': '2011'}NEW MEMBER APPLICATION ON:2022-08-29
 
-{'Firstname': 'gary coxhead', 'Last Name': 'coxhead', 'Gender': 'm', 'Email': '', 'CardNumber': '2011'}
+{'Firstname': 'gary coxhead', 'Last Name': 'coxhead', 'Gender': 'm', 'Email': '', 'CardNumber': '2011'}NEW MEMBER APPLICATION ON:2022-08-30
+
+{'Firstname': 'Bart ', 'Last Name': 'Simpson', 'Gender': 'Male', 'Email': 'bsimpson@mail', 'CardNumber': '2011'}
