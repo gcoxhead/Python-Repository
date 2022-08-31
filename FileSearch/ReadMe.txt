@@ -1,0 +1,1 @@
+This python script contains a method for searching for files. Change the root path and pattern to suit specific application.
