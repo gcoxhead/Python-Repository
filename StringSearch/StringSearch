@@ -1,0 +1,11 @@
+# Define the string data
+string = 'This is an amazing python script to search for a string within a string'
+
+# Define the search string
+search = 'string'
+
+# Store the count value
+count = string.count(search)
+
+# Print the formatted output
+print("%s appears %d times" % (search, count))
