@@ -1,0 +1,1 @@
+This script can be used to generate a random password
