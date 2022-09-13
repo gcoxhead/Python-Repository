@@ -1,5 +1,5 @@
 # Write your code here :-)
 
-sentance = "A very long sentence"
+sentence = "A very long sentence that is needlessly verbose"
 
-print(sentence.count(e))
+print(sentence.count("e"))
