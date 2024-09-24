@@ -8,4 +8,9 @@ def isWeekday(mydate):
     else:
         return False
 
-print(isWeekday(datetime.now()))
+if isWeekday(datetime.now()):
+    print("It's a weekday!")
+    
+else:
+    print("It's a weekend!")
+    
