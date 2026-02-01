@@ -1,6 +1,6 @@
 from machine import Pin
 from time import sleep
-import dht 
+import dht
 
 # sensor = dht.DHT22(Pin(27))
 sensor = dht.DHT11(Pin(27))
