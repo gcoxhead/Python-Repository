@@ -32,7 +32,6 @@ while True:
     seconds_elapsed+=2
     sensor.measure()
     reading_number+=1
-    
     print_sensor_readings(reading_number, seconds_elapsed)
     
   except OSError as e:
